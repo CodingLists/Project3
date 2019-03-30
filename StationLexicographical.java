@@ -14,16 +14,6 @@ public class StationLexicographical extends MesoSortedAbstract
 	{
 		this.asciiVal = asciiVal;
 		
-		ArrayList<String> list = new ArrayList<String>();
-		Set<String> set = asciiVal.keySet();
-		
-		for(String key : set)
-		{
-			list.add(key);
-		}
-		
-		
-		Collections.sort(list);
 		
 		
 	}
@@ -31,7 +21,26 @@ public class StationLexicographical extends MesoSortedAbstract
 	@Override
 	Map<String, Integer> sortedMap(HashMap<String, Integer> unsorted) 
 	{
-		return null;
+		ArrayList<String> list = new ArrayList<String>();
+		Set<String> set = unsorted.keySet();
+		
+		for(String key : set)
+		{
+			list.add(key);
+		}
+		
+		Collections.sort(list);
+		int num = unsorted.get(list.get(0));
+		
+		HashMap<String, Integer> sortedMap = new HashMap<String, Integer>();
+		
+		for(String temp : list)
+		{
+			sortedMap.put(temp, num);
+		}
+		
+		return sortedMap;
+		
 	}
 	
 	
