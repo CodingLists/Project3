@@ -3,6 +3,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 
 public class StationLexicographical extends MesoSortedAbstract
 {
@@ -14,34 +15,42 @@ public class StationLexicographical extends MesoSortedAbstract
 	{
 		this.asciiVal = asciiVal;
 		
-		
-		
-	}
-
-	@Override
-	Map<String, Integer> sortedMap(HashMap<String, Integer> unsorted) 
-	{
+		Set<String> set = asciiVal.keySet();
 		ArrayList<String> list = new ArrayList<String>();
-		Set<String> set = unsorted.keySet();
+		
+		Map<String, Integer> sortedMap = sortedMap(asciiVal);
 		
 		for(String key : set)
 		{
 			list.add(key);
 		}
 		
-		Collections.sort(list);
-		int num = unsorted.get(list.get(0));
+		int num = asciiVal.get(list.get(0));
+		String strg = "";
 		
-		HashMap<String, Integer> sortedMap = new HashMap<String, Integer>();
+		Set<String> sorted = sortedMap.keySet();
 		
-		for(String temp : list)
+		for(String temp : sorted)
 		{
-			sortedMap.put(temp, num);
+			strg+= temp + " " + num + "\n";
 		}
 		
-		return sortedMap;
+		System.out.println(strg);
+		
+			
+	}
+
+	@Override
+	Map<String, Integer> sortedMap(HashMap<String, Integer> unsorted) 
+	{
+		TreeMap<String, Integer> tm = new TreeMap<>();
+		tm.putAll(unsorted);
+		return tm;
+		
 		
 	}
+	
+	
 	
 	
 }
