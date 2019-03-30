@@ -1,4 +1,4 @@
-
-public abstract class MesoAsciiAbstract {
-
+public abstract class MesoAsciiAbstract
+{
+	abstract int calAverage();
 }
