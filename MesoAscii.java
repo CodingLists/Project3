@@ -1,21 +1,21 @@
 public class MesoAscii extends MesoAsciiAbstract
 {
 	
-	private String id;
+	private MesoStation meso;
 
-	public MesoAscii(String id)
+	public MesoAscii(MesoStation meso)
 	{
-		this.id = id;
+		this.meso = meso;
 	}
 	
 	int calAverage() 
 	{
 		
 		
-		int char1 = (int)this.id.charAt(0);
-		int char2 = (int)this.id.charAt(1);
-		int char3 = (int)this.id.charAt(2);
-		int char4 = (int)this.id.charAt(3);
+		int char1 = (int)this.meso.getStID().charAt(0);
+		int char2 = (int)this.meso.getStID().charAt(1);
+		int char3 = (int)this.meso.getStID().charAt(2);
+		int char4 = (int)this.meso.getStID().charAt(3);
 		
 		int average = (char1 + char2 + char3 + char4)/4;
 		return average;
