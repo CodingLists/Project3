@@ -10,5 +10,10 @@ public class MesoEqual
 		this.stID = stID;
 	}
 
-
+	public HashMap<String, Integer> calAsciiEqual() 
+	{
+		
+		return null;
+	}
+	
 }
