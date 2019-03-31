@@ -37,6 +37,21 @@ four characters and took the average of their values.
 
 
 
+THE HASHMAP
+
+
+This next part, was a bit tricky. It was the second class out of third that we were required
+to complete from scratch. MesoEquals. I found it weird to finish this, but I managed to do so without any
+errors. The constructor was just a four letter String which I assumed meant it itself would be
+compared to the other Stations in the Mesonet. The issue here was the only way to calculate the
+average was in the MesoAscii class. It felt strange but I didnt see another way to do it: I 
+created two objects from MesoAscii so I could calculate the average. I then imported a Buffer
+Reader to read the Mesonet file. I created a for loop which creates a different MesoAscii each
+time to be compared with the one of the class Meso. If the average was the same I would put it
+into a HashMap. It wasnt too hard, just awkward.
+
+
+
 SORT AND PASTE
 
 
