@@ -37,6 +37,26 @@ four characters and took the average of their values.
 
 
 
+SORT AND PASTE
+
+
+The final class on my bucketlist was something that sounds similar to Mexico. Lexicographical. This class had
+a constructor and a method which inherits from a parent class called MesoSortedAbstract. I spent a good 
+portion of my duration on this part of the project doing something completley useless. I tried several different
+unique ways to go about sorting a HashMap. None of them worked and I will not go into details about any of them,
+but I ended up learning about TreeMaps which actually just sort the Map for you. I created a TreeMap in the sorted
+method of this class and sorted my HashMap that I made in MesoEquals. Now that I had the sorted version of all of
+the MesoStations with a certain Integer of average I called that method in the constructor, and printed it all out
+using an enhanced For Loop. I really wish I knew more about TreeMaps.
+
+
+
+
+
+
+
+
+
 
 
 
