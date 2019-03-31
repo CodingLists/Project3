@@ -52,6 +52,24 @@ using an enhanced For Loop. I really wish I knew more about TreeMaps.
 
 
 
+CONCLUSION
+
+
+I don't yet know the real reason behind MesoStations quite yet. As far as I know they are nothing more than a 
+cluster of letters. If the reason behind these projects is to teach us about what the stuff we are seeing 
+really means, then I don't know how close I am to understanding the intracacies behind every character on the
+screen. If Mesostations have something to do with coding then I haven't yet learned that part about it either.
+As far as techniques go I haven't really learned anything knew, I suppose that much of this course is to be 
+displayed in the labs and not the projects. I can for know, the least I could say is that projects are helping
+me tackle problems where the answer isn't necessarily right in front of me, and while I thought the writeup
+was subpar at first, I'm pretty sure most of my future problems will be presented in a even worse manner. As 
+long as I'm okay with completing these projects I guess I am on the right track. Now I just need to find a way
+to get a good grade on the very difficult exams.
+
+
+
+
+
 
 
 
