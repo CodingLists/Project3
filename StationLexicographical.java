@@ -25,17 +25,14 @@ public class StationLexicographical extends MesoSortedAbstract
 			list.add(key);
 		}
 		
-		int num = asciiVal.get(list.get(0));
-		String strg = "";
+
 		
-		Set<String> sorted = sortedMap.keySet();
 		
-		for(String temp : sorted)
+		for (String stid : sortedMap.keySet()) 
 		{
-			strg+= temp + " " + num + "\n";
+		    System.out.println(stid + " " + sortedMap.get(stid));		    
 		}
 		
-		System.out.println(strg);
 		
 			
 	}
